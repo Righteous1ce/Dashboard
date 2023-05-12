@@ -48,7 +48,7 @@ body, html {
 .search-form{
     width: 100%;
     max-width: 500px;
-    background: #F2F2F2;
+    background: #DCE1E3;
     display: flex;
     align-items: center;
     border-radius: 60px;
@@ -61,9 +61,9 @@ body, html {
     flex: 1;
     border: 0;
     outline: none;
-    padding: 10px 10px;
+    padding: 5px 5px;
     font-size: 15px;
-    color: brown;
+    color: black;
 }
 
 ::placeholder{
@@ -71,24 +71,40 @@ body, html {
 }
 
 .search-form button img{
-    width: 25px;
+    width: 15px;
 
 }
 
 .search-form button{
     border: 0;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: aliceblue;
     cursor: pointer;
+}
+
+
+.search-container {
+    display: flex;
+    
+}
+
+.alert {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.alert img{
+    width:24px;
 }
 
 /* ////////// MAIN \\\\\\\\\\ */
 
 
 .main{
-    background-color: #F2F2F2;
+    background-color: #DCE1E3;
     grid-column: 2 / 13;
     grid-row: 2 / 9;
     grid-template-rows: 1fr, auto; 
@@ -112,37 +128,37 @@ body, html {
 .project-1 {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    background-color: pink;
+    background-color: aliceblue;
 }
 
 .project-2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    background-color: aqua;
+    background-color: aliceblue;
 }
 
 .project-3 {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    background-color: coral;
+    background-color: aliceblue;
 }
 
 .project-4 {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    background-color: gold;
+    background-color: aliceblue;
 }
 
 .project-5 {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
-    background-color: lightblue;
+    background-color: aliceblue;
 }
 
 .project-6 {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
-    background-color: lightgreen;
+    background-color: aliceblue;
 }
 
 .annoucements{
@@ -152,13 +168,13 @@ body, html {
 }
 
 .ann {
-    background-color: pink;
+    background-color: aliceblue;
     grid-row: 1 / 2;
     grid-column: 1 / 4;
 }
 
 .trend {
-    background-color: aqua;
+    background-color: aliceblue;
     grid-row: 2 / 3;
     grid-column: 1 / 4;
 }
