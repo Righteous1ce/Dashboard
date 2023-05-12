@@ -13,15 +13,38 @@ body, html {
     grid-template-columns: repeat(8, 1fr); 
 }
     
+/*////////// SIDEBAR \\\\\\\\\\ */
+.sidebar{
+    background-color: dodgerblue;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-row: 1 / 9;
+}
+
+.sidebar div{
+    display: flex;
+    align-items: center;
+    margin: 1px;
+    
+}
+.sidebar img{
+    height: 24px;
+    margin-right: 5px;
+}
+
+
+
+
+
+/* ////////// HEADER \\\\\\\\\\ */
+
 .header{
     background-color: aliceblue;
     grid-column: 2 / 13;
 }
-.sidebar{
-    background-color: dodgerblue;
-    grid-row: 1 / 9;
 
-}
+/* ////////// MAIN \\\\\\\\\\ */
+
 
 .main{
     background-color: lightgrey;
@@ -32,6 +55,8 @@ body, html {
 
     
 }
+
+/* ////////// PROJECTS & ANNOUNCEMENTS \\\\\\\\\\ */
 
 .projects {
     grid-row: 1 / 3;
