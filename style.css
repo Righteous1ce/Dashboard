@@ -18,6 +18,7 @@ body, html {
     background-color: dodgerblue;
     display: grid;
     grid-row: 1 / 9;
+    
 }
 
 .sidebar div{
@@ -25,10 +26,12 @@ body, html {
     align-items: center;
     margin: 1px;
     
+    
 }
 .sidebar img{
     height: 24px;
     margin-right: 5px;
+    
 }
 
 
@@ -42,11 +45,50 @@ body, html {
     grid-column: 2 / 13;
 }
 
+.search-form{
+    width: 100%;
+    max-width: 500px;
+    background: #F2F2F2;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px;
+
+}
+
+.search-form .input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    color: brown;
+}
+
+::placeholder{
+    color: black;
+}
+
+.search-form button img{
+    width: 25px;
+
+}
+
+.search-form button{
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
 /* ////////// MAIN \\\\\\\\\\ */
 
 
 .main{
-    background-color: lightgrey;
+    background-color: #F2F2F2;
     grid-column: 2 / 13;
     grid-row: 2 / 9;
     grid-template-rows: 1fr, auto; 
