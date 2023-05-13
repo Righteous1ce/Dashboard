@@ -24,7 +24,7 @@ body, html {
 .sidebar div{
     display: flex;
     align-items: center;
-    margin: 1px;
+    margin: 3px;
     
     
 }
@@ -45,14 +45,24 @@ body, html {
     grid-column: 2 / 13;
 }
 
+.profile-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+
 .search-form{
+    
     width: 100%;
     max-width: 500px;
+    max-height: 30px;
     background: #DCE1E3;
     display: flex;
     align-items: center;
     border-radius: 60px;
     padding: 5px;
+    margin: 10px;
 
 }
 
@@ -87,18 +97,37 @@ body, html {
 
 .search-container {
     display: flex;
-    
+    align-items: flex-start;
+    justify-content: end;
 }
 
 .alert {
     display: flex;
     justify-content: flex-end;
+    grid-column: 2;
+    grid-row: 1;
+    
+    
+    
     
 }
 
 .alert img{
-    width:24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 25px;
+    height: 25px;
+    margin: 10px;  
 }
+
+.alert h4{
+    margin: 10px;
+}
+
+
+
+
 
 /* ////////// MAIN \\\\\\\\\\ */
 
