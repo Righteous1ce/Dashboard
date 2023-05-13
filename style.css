@@ -106,10 +106,6 @@ body, html {
     justify-content: flex-end;
     grid-column: 2;
     grid-row: 1;
-    
-    
-    
-    
 }
 
 .alert img{
@@ -125,6 +121,36 @@ body, html {
     margin: 10px;
 }
 
+.profile-page{
+    display: flex;
+}
+
+.profile-page img{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+.profile-text{
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.profile-btn{
+    display: flex;
+}
+.profile-btn button{
+   justify-content: flex-end;
+   max-height: 40px;
+   margin: 10px;
+   width: 90px;
+   background-color: dodgerblue;
+   color: aliceblue;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+}
 
 
 
