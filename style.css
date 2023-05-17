@@ -1,56 +1,60 @@
-body, html {
-    height: 100%;
+* {
     margin: 0;
+    padding: 0;
 }
 
-.dash-contianer{
+.dash-container {
     display: grid;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    grid-template-rows: repeat(3, 1fr 2fr); 
-    grid-template-columns: repeat(8, 1fr); 
+    grid-template-columns: 20% 80%;
+
 }
-    
-/*////////// SIDEBAR \\\\\\\\\\ */
+
+/* ////////// SIDEBAR \\\\\\\\\\ */ 
+
 .sidebar{
-    background-color: dodgerblue;
-    display: grid;
-    grid-row: 1 / 9;
-    
+    background-color: #0ea5e9;
+    height: 100vh;
+    color: aliceblue;
 }
 
-.sidebar div{
+.logo-title{
     display: flex;
     align-items: center;
-    margin: 3px;
-    
-    
-}
-.sidebar img{
-    height: 24px;
-    margin-right: 5px;
-    
+    margin: 20px 15px;
 }
 
+.side-items {
+    display: flex;
+    align-items: center;
+    margin: 5px 15px;
+    
+
+}
+
+.side-items-2{
+    margin-top: 100px;
+}
 
 
+.side-items p{
+    margin-left: 20px;
+    font-size: 25px;
+    
+}
 
+/* ////////// MAIN \\\\\\\\\\ */
 
-/* ////////// HEADER \\\\\\\\\\ */
-
-.header{
+.main{
     background-color: aliceblue;
-    grid-column: 2 / 13;
-    
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 80%;
 }
 
-.profile-container{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    
+.navbar{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-form{
@@ -64,6 +68,7 @@ body, html {
     border-radius: 60px;
     padding: 5px;
     margin: 10px;
+    margin-right: 300px;
 
 }
 
@@ -95,188 +100,171 @@ body, html {
     cursor: pointer;
 }
 
-
-.search-container {
+.search {
     display: flex;
-    align-items: flex-start;
-    justify-content: end;
+    align-items: center;
+    font-size: 50px;
+
 }
 
-.alert {
-    display: flex;
-    justify-content: flex-end;
-    grid-column: 2;
-    grid-row: 1;
+.search img {
+    width: 30px;
+    height: 30px;
 }
 
-.alert img{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    width: 25px;
-    height: 25px;
-    margin: 10px;  
+.bell {
+    margin-right: 30px;
 }
 
-.alert h4{
-    margin: 10px;
+.profile-pic {
+    margin-right: 10px;
 }
 
-.profile-page{
+.profile img{
+    width: 100px;
+    height: 100px;
+}
+
+.user-pic{
+    margin-left: 60px;
+    margin-right: 15px;
+}
+
+.profile{
     display: flex;
-    margin-top: -38px;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
-.profile-page img{
-    width: 70px;
-    height: 70px;
-    margin: 10px;
-}
-
-.profile-text{
-    flex-direction: column;
-    justify-content: flex-start;
-    
-}
-
-.profile-btn{
+.left{
     display: flex;
-}
-.profile-btn button{
-   justify-content: flex-end;
-   max-height: 30px;
-   margin: 10px;
-   width: 90px;
-   background-color: dodgerblue;
-   color: aliceblue;
-   border: none;
-   border-radius: 10px;
-   cursor: pointer;
+    align-items: center;
+    font-size: 25px;
 }
 
-
-
-
-/* ////////// MAIN \\\\\\\\\\ */
-
-
-.main{
-    background-color: #DCE1E3;
-    grid-column: 2 / 13;
-    grid-row: 2 / 9;
-    grid-template-rows: 1fr, auto; 
-    grid-template-columns: repeat(4, 1fr); 
-    
+.right{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
 }
 
-.main-title{
+.btn { 
+    width: 90px;
+    height: 30px;
+    background-color:  #0ea5e9;
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+   
+}
+
+.main-content{
+    background-color: #e5e7eb;
     display: grid;
-    
-    grid-template-columns: repeat(3, 1fr);
-
-}
-.project-u{
-    grid-column: 1;
-}
-.annts{
-    grid-column: 3;
+    grid-template-columns: 70% 30%;
 }
 
-
-
-/* ////////// PROJECTS & ANNOUNCEMENTS \\\\\\\\\\ */
-
-.projects {
-    grid-row: 1 / 3;
-    grid-column: 1 / 6;
+.cards{
     display: grid;
-    grid-template-rows: repeat(3, 1fr); 
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: 50% 50%;
+}
+
+.card{
+    background-color: aliceblue;
+    border-left: 10px solid #facc15;
+    border-radius: 10px;
     margin: 20px;
-    border: 3px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+} 
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
 }
 
-.projects div{
-    max-height: 200px;
-}
-
-.projects img {
-    width: 24px;
-    height: 24px;
+h4{
+    margin-top: 20px;
+    margin-left: 30px;
     
 }
 
-
-.project-1 {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    background-color: aliceblue;
-    border-radius: 20px;
-    
+h6{ 
+    font-size: 20px;
 }
 
-.project-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    background-color: aliceblue;
-    border-radius: 20px;
+
+.card p{
+    font-size: 15px;
+    color: #4b5563;
+    margin: 10px 0;
 }
 
-.project-3 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    background-color: aliceblue;
-    border-radius: 20px;
-}
+/* ////////// ANNOUNCEMENTS \\\\\\\\\\ */
 
-.project-4 {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    background-color: aliceblue;
-    border-radius: 20px;
-}
-
-.project-5 {
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;
-    background-color: aliceblue;
-    border-radius: 20px;
-}
-
-.project-6 {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-    background-color: aliceblue;
-    border-radius: 20px;
-}
-
-.annoucements{
+.ann-container{
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 20px;
-    `
+    grid-template-rows: 50% 50%;
+}
 
+.ann-card, .trend-card{
+    height: 80%;
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.trend-content img{
+    width: 30px;
+    height: 30px;
+}
+
+.ann-content{
+    padding: 15px 10px;
+}
+
+.ann-content h6, .trend-text h6{
+    font-size: 14px;
+}
+
+.ann-content p, .trend-text p{
+    font-size: 15px;
+    color: #4b5563 ;
+}
+
+.divide{
+    border: 0.3px solid #4b5563;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.trend-item{
+    display: flex;
+    align-items: center;
+    margin: 30px  20px;
     
 }
 
-.ann {
-    background-color: aliceblue;
-    grid-row: 1 / 2;
-    grid-column: 1 / 4;
-    border-radius: 20px;
+.trend-card{ 
+    display: flex;
+    justify-content: center;
 }
 
-.trend {
-    background-color: yellow;
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    border-radius: 20px;
+.trend-text{
+    margin-left: 10px;
 }
 
 
 
 
 
-
+ 
